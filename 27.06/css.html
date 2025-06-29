@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+        /* default font size 16px */
+        .box {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 20px;
+        }
+        .em-box {
+            font-size: 1.5em;
+            /* 1.5 × parent (16px) = 24px */
+        }
+        .rem-box {
+            font-size: 2rem;
+            /* 2 × root (16px) = 32px */
+        }
+        .percent-box {
+            width: 60%;
+            /* 60% of body width */
+        }
+    </style>
+</head>
+<body>
+    <div class="box px-box">
+        <strong>PX Box</strong>
+    </div>
+    <div class="box em-box">
+        <strong>EM Box</strong>
+    </div>
+    <div class="box rem-box">
+        <strong>REM Box</strong>
+    </div>
+    <div class="box percent-box">
+        <strong>% Box</strong>
+    </div>
+</body>
+</html>
